@@ -9,5 +9,8 @@ import { Component } from "@angular/core";
     }
 })
 export class BreadcrumbComponent{
-
+    breadcrumbs = {
+        icon: 'i-tabler-home',
+        name: 'Home'
+    }
 }
