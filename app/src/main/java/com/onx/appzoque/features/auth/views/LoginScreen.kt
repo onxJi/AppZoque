@@ -35,8 +35,14 @@ fun LoginScreen() {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
+            Image(
+                painter = painterResource(R.drawable.logoapp),
+                contentDescription = "app logo",
+                modifier = Modifier
+                    .size(104.dp)
+            )
             Text(
-                text = "Bienvenido",
+                text = "Inicio de Sesión",
                 style = MaterialTheme.typography.headlineMedium.copy(
                     fontWeight = FontWeight.Bold,
                     color = MaterialTheme.colorScheme.primary
@@ -83,10 +89,10 @@ fun GoogleSignInButton(
             horizontalArrangement = Arrangement.Center
         ) {
             Image(
-                painter = painterResource(R.drawable.ic_launcher_foreground),
-                contentDescription = "Google logo",
+                painter = painterResource(R.drawable.icongoogle),
+                contentDescription = "app logo",
                 modifier = Modifier
-                    .size(24.dp)
+                    .size(40.dp)
                     .padding(end = 8.dp)
             )
             Text(
